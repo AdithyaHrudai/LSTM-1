@@ -1,0 +1,120 @@
+{
+  "timestamp": "20260301_215407",
+  "market": "India",
+  "currency": "INR",
+  "data_range": "2020-01-01 to 2026-01-01",
+  "stocks": [
+    "COFORGE.NS",
+    "HCLTECH.NS",
+    "INFY.NS",
+    "LTIM.NS",
+    "MPHASIS.NS",
+    "OFSS.NS",
+    "PERSISTENT.NS",
+    "TCS.NS",
+    "TECHM.NS",
+    "WIPRO.NS"
+  ],
+  "stock_names": {
+    "COFORGE.NS": "Coforge",
+    "HCLTECH.NS": "HCL Technologies",
+    "INFY.NS": "Infosys",
+    "LTIM.NS": "LTIMindtree",
+    "MPHASIS.NS": "Mphasis",
+    "OFSS.NS": "Oracle Financial Services",
+    "PERSISTENT.NS": "Persistent Systems",
+    "TCS.NS": "Tata Consultancy Services",
+    "TECHM.NS": "Tech Mahindra",
+    "WIPRO.NS": "Wipro"
+  },
+  "n_stocks": 10,
+  "overall": {
+    "rmse": 103.06,
+    "mae": 52.98,
+    "r2": 0.9974,
+    "mape": 3.17
+  },
+  "per_stock": {
+    "TCS.NS": {
+      "rmse": 66.81,
+      "mae": 51.73,
+      "mape": 1.68,
+      "r2": 0.9862,
+      "name": "Tata Consultancy Services"
+    },
+    "INFY.NS": {
+      "rmse": 34.04,
+      "mae": 26.04,
+      "mape": 1.94,
+      "r2": 0.9866,
+      "name": "Infosys"
+    },
+    "HCLTECH.NS": {
+      "rmse": 27.56,
+      "mae": 21.12,
+      "mape": 2.04,
+      "r2": 0.9946,
+      "name": "HCL Technologies"
+    },
+    "WIPRO.NS": {
+      "rmse": 22.96,
+      "mae": 18.65,
+      "mape": 9.58,
+      "r2": 0.8067,
+      "name": "Wipro"
+    },
+    "LTIM.NS": {
+      "rmse": 149.96,
+      "mae": 108.51,
+      "mape": 2.38,
+      "r2": 0.985,
+      "name": "LTIMindtree"
+    },
+    "TECHM.NS": {
+      "rmse": 31.03,
+      "mae": 23.9,
+      "mape": 2.35,
+      "r2": 0.9912,
+      "name": "Tech Mahindra"
+    },
+    "PERSISTENT.NS": {
+      "rmse": 107.98,
+      "mae": 71.3,
+      "mape": 3.21,
+      "r2": 0.9966,
+      "name": "Persistent Systems"
+    },
+    "OFSS.NS": {
+      "rmse": 207.57,
+      "mae": 120.07,
+      "mape": 2.17,
+      "r2": 0.9951,
+      "name": "Oracle Financial Services"
+    },
+    "MPHASIS.NS": {
+      "rmse": 69.09,
+      "mae": 51.99,
+      "mape": 2.43,
+      "r2": 0.9885,
+      "name": "Mphasis"
+    },
+    "COFORGE.NS": {
+      "rmse": 40.18,
+      "mae": 29.44,
+      "mape": 3.55,
+      "r2": 0.992,
+      "name": "Coforge"
+    }
+  },
+  "epochs_trained": 53,
+  "best_val_loss": 7e-05,
+  "architecture": {
+    "lstm_1": 64,
+    "lstm_2": 32,
+    "dropout": 0.3,
+    "sequence_length": 60,
+    "features": 6,
+    "batch_size": 32,
+    "learning_rate": 0.0005
+  }
+}

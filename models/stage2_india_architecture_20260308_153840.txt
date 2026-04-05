@@ -1,0 +1,70 @@
+StockSense AI — Indian NSE LSTM Model Architecture
+=============================================
+
+Model Type: Sequential LSTM (upgraded)
+Market: India (NSE) — Currency: INR
+Training Date: 20260308_153840
+Data Range: 2016-03-01 to 2026-03-01
+Training Stocks: 20 Indian companies
+Features: 9 features
+Target: Close (INR)
+
+Architecture:
+1. LSTM Layer 1: 128 units, return_sequences=True
+2. Dropout: 0.3
+3. LSTM Layer 2: 64 units, return_sequences=False
+4. Dropout: 0.3
+5. Dense: 32 units, ReLU activation
+6. Dense Output: 1 unit
+
+Training Parameters:
+- Batch Size: 32
+- Learning Rate: 0.0003
+- Epochs Trained: 26
+- Early Stopping Patience: 20
+- LR Reduction Patience: 8
+
+Validation Performance:
+- RMSE: Rs.140.70
+- MAE: Rs.93.02
+- R2: 0.9957
+- MAPE: 23.49%
+
+Features Used (9):
+- Open
+- High
+- Low
+- Close
+- Volume
+- RSI_14
+- MACD_hist
+- BB_width
+- sentiment_10d_avg
+
+Stocks Trained On:
+- ABB India (ABB.NS)
+- Bajaj Auto (BAJAJ-AUTO.NS)
+- Cyient Limited (CYIENT.NS)
+- Divi's Laboratories (DIVISLAB.NS)
+- Eicher Motors (EICHERMOT.NS)
+- Force Motors (FORCEMOT.NS)
+- Godfrey Phillips India (GODFRYPHLP.NS)
+- Hero MotoCorp (HEROMOTOCO.NS)
+- Hindustan Unilever (HINDUNILVR.NS)
+- Indus Towers (INDUSTOWER.NS)
+- LTIMindtree (LTIM.NS)
+- L&T Technology Services (LTTS.NS)
+- NMDC Limited (NMDC.NS)
+- Persistent Systems (PERSISTENT.NS)
+- Pidilite Industries (PIDILITIND.NS)
+- Polycab India (POLYCAB.NS)
+- Schaeffler India (SCHAEFFLER.NS)
+- Torrent Pharmaceuticals (TORNTPHARM.NS)
+- Trent Limited (TRENT.NS)
+- United Breweries (UBL.NS)
+
+Usage:
+1. model = keras.models.load_model('models/stage2_india_lstm_20260308_153840.keras', compile=False)
+2. scalers = joblib.load('models/stage2_india_scalers_20260308_153840.pkl')
+3. Scale input (shape: batch, 60, 9) with feature_scaler
+4. Inverse-transform predictions with target_scaler (output in INR)

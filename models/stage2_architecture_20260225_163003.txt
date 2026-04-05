@@ -1,0 +1,65 @@
+Stage 2 Universal LSTM Model Architecture (RETRAINED)
+=============================================
+
+Model Type: Sequential LSTM
+Training Date: 20260225_163003
+Data Range: 2020-01-01 to 2026-01-01
+Training Stocks: 20 stocks
+Features: 6 features
+Target: Close
+
+Architecture:
+1. LSTM Layer 1: 64 units, return_sequences=True
+2. Dropout: 0.3
+3. LSTM Layer 2: 32 units, return_sequences=False
+4. Dropout: 0.3
+5. Dense Output: 1 unit
+
+Training Parameters:
+- Batch Size: 32
+- Learning Rate: 0.0005
+- Epochs Trained: 49
+- Early Stopping Patience: 15
+- LR Reduction Patience: 7
+
+Validation Performance Metrics:
+- RMSE: $7.37
+- MAE: $4.33
+- R2: 0.9984
+- MAPE: 2.70%
+
+Features Used:
+- Open
+- High
+- Low
+- Close
+- Volume
+- sentiment_10d_avg
+
+Stocks Trained On:
+- AAPL
+- AMZN
+- AVGO
+- BRK-B
+- COST
+- GOOG
+- JNJ
+- JPM
+- LLY
+- MA
+- META
+- MSFT
+- NFLX
+- NVDA
+- ORCL
+- PG
+- TSLA
+- V
+- WMT
+- XOM
+
+Usage Instructions:
+1. Load model:   model = keras.models.load_model('models/stage2_universal_lstm_20260225_163003.keras', compile=False)
+2. Load scalers: scalers = joblib.load('models/stage2_scalers_20260225_163003.pkl')
+3. Use feature_scaler to scale input (shape: batch, 60, 6)
+4. Use target_scaler to inverse-transform predictions

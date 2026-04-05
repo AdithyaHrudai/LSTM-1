@@ -1,0 +1,223 @@
+{
+  "timestamp": "20260330_124649",
+  "market": "India",
+  "currency": "INR",
+  "data_range": "2016-02-27 to 2026-03-27",
+  "stocks": [
+    "ADANIPOWER.NS",
+    "BEL.NS",
+    "CANBK.NS",
+    "COALINDIA.NS",
+    "DLF.NS",
+    "GMRAIRPORT.NS",
+    "HINDUNILVR.NS",
+    "INDUSTOWER.NS",
+    "IOC.NS",
+    "IRFC.NS",
+    "NHPC.NS",
+    "NMDC.NS",
+    "PERSISTENT.NS",
+    "PNB.NS",
+    "RECLTD.NS",
+    "SAIL.NS",
+    "SUNPHARMA.NS",
+    "SUZLON.NS",
+    "TATASTEEL.NS",
+    "UNIONBANK.NS"
+  ],
+  "stock_names": {
+    "ADANIPOWER.NS": "Adani Power",
+    "BEL.NS": "Bharat Electronics",
+    "CANBK.NS": "Canara Bank",
+    "COALINDIA.NS": "Coal India",
+    "DLF.NS": "DLF Limited",
+    "GMRAIRPORT.NS": "GMR Airports Infrastructure",
+    "HINDUNILVR.NS": "Hindustan Unilever",
+    "INDUSTOWER.NS": "Indus Towers",
+    "IOC.NS": "Indian Oil Corporation",
+    "IRFC.NS": "Indian Railway Finance Corp",
+    "NHPC.NS": "NHPC Limited",
+    "NMDC.NS": "NMDC Limited",
+    "PERSISTENT.NS": "Persistent Systems",
+    "PNB.NS": "Punjab National Bank",
+    "RECLTD.NS": "REC Limited",
+    "SAIL.NS": "Steel Authority of India",
+    "SUNPHARMA.NS": "Sun Pharmaceutical Industries",
+    "SUZLON.NS": "Suzlon Energy",
+    "TATASTEEL.NS": "Tata Steel",
+    "UNIONBANK.NS": "Union Bank of India"
+  },
+  "n_stocks": 20,
+  "n_features": 9,
+  "features": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "RSI_14",
+    "MACD_hist",
+    "BB_width",
+    "sentiment_10d_avg"
+  ],
+  "overall": {
+    "rmse": 5.52,
+    "mae": 3.45,
+    "r2": 0.9894,
+    "mape": 4.1
+  },
+  "per_stock": {
+    "IRFC.NS": {
+      "rmse": 5.53,
+      "mae": 3.47,
+      "mape": 4.48,
+      "r2": 0.9905,
+      "name": "Indian Railway Finance Corp"
+    },
+    "SUZLON.NS": {
+      "rmse": 1.75,
+      "mae": 0.99,
+      "mape": 7.4,
+      "r2": 0.9932,
+      "name": "Suzlon Energy"
+    },
+    "NHPC.NS": {
+      "rmse": 2.19,
+      "mae": 1.25,
+      "mape": 2.64,
+      "r2": 0.9933,
+      "name": "NHPC Limited"
+    },
+    "NMDC.NS": {
+      "rmse": 2.37,
+      "mae": 1.43,
+      "mape": 3.42,
+      "r2": 0.988,
+      "name": "NMDC Limited"
+    },
+    "PNB.NS": {
+      "rmse": 4.43,
+      "mae": 2.66,
+      "mape": 3.34,
+      "r2": 0.9875,
+      "name": "Punjab National Bank"
+    },
+    "CANBK.NS": {
+      "rmse": 3.56,
+      "mae": 2.31,
+      "mape": 3.98,
+      "r2": 0.9884,
+      "name": "Canara Bank"
+    },
+    "UNIONBANK.NS": {
+      "rmse": 4.48,
+      "mae": 2.98,
+      "mape": 3.53,
+      "r2": 0.9896,
+      "name": "Union Bank of India"
+    },
+    "ADANIPOWER.NS": {
+      "rmse": 4.45,
+      "mae": 2.62,
+      "mape": 10.63,
+      "r2": 0.9916,
+      "name": "Adani Power"
+    },
+    "TATASTEEL.NS": {
+      "rmse": 4.6,
+      "mae": 2.98,
+      "mape": 3.41,
+      "r2": 0.9914,
+      "name": "Tata Steel"
+    },
+    "SAIL.NS": {
+      "rmse": 4.24,
+      "mae": 2.87,
+      "mape": 3.63,
+      "r2": 0.9867,
+      "name": "Steel Authority of India"
+    },
+    "IOC.NS": {
+      "rmse": 4.01,
+      "mae": 2.53,
+      "mape": 2.78,
+      "r2": 0.9889,
+      "name": "Indian Oil Corporation"
+    },
+    "COALINDIA.NS": {
+      "rmse": 11.62,
+      "mae": 7.26,
+      "mape": 3.19,
+      "r2": 0.9897,
+      "name": "Coal India"
+    },
+    "BEL.NS": {
+      "rmse": 10.74,
+      "mae": 6.02,
+      "mape": 6.44,
+      "r2": 0.9922,
+      "name": "Bharat Electronics"
+    },
+    "RECLTD.NS": {
+      "rmse": 13.74,
+      "mae": 7.31,
+      "mape": 4.46,
+      "r2": 0.9921,
+      "name": "REC Limited"
+    },
+    "HINDUNILVR.NS": {
+      "rmse": 77.76,
+      "mae": 59.9,
+      "mape": 2.81,
+      "r2": 0.9816,
+      "name": "Hindustan Unilever"
+    },
+    "DLF.NS": {
+      "rmse": 26.72,
+      "mae": 16.77,
+      "mape": 4.03,
+      "r2": 0.9881,
+      "name": "DLF Limited"
+    },
+    "PERSISTENT.NS": {
+      "rmse": 195.16,
+      "mae": 120.87,
+      "mape": 10.87,
+      "r2": 0.9902,
+      "name": "Persistent Systems"
+    },
+    "INDUSTOWER.NS": {
+      "rmse": 11.48,
+      "mae": 7.74,
+      "mape": 2.9,
+      "r2": 0.977,
+      "name": "Indus Towers"
+    },
+    "GMRAIRPORT.NS": {
+      "rmse": 2.98,
+      "mae": 1.81,
+      "mape": 3.93,
+      "r2": 0.9896,
+      "name": "GMR Airports Infrastructure"
+    },
+    "SUNPHARMA.NS": {
+      "rmse": 54.16,
+      "mae": 33.3,
+      "mape": 3.05,
+      "r2": 0.987,
+      "name": "Sun Pharmaceutical Industries"
+    }
+  },
+  "epochs_trained": 24,
+  "best_val_loss": 0.00082,
+  "architecture": {
+    "lstm_1": 128,
+    "lstm_2": 64,
+    "dense": 32,
+    "dropout": 0.3,
+    "sequence_length": 60,
+    "features": 9,
+    "batch_size": 32,
+    "learning_rate": 0.0003
+  }
+}

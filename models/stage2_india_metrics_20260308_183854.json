@@ -1,0 +1,214 @@
+{
+  "timestamp": "20260308_183854",
+  "market": "India",
+  "currency": "INR",
+  "data_range": "2016-02-27 to 2026-02-28",
+  "stocks": [
+    "ADANIPOWER.NS",
+    "BEL.NS",
+    "CANBK.NS",
+    "COALINDIA.NS",
+    "DLF.NS",
+    "GMRAIRPORT.NS",
+    "HINDUNILVR.NS",
+    "INDUSTOWER.NS",
+    "IOC.NS",
+    "IRFC.NS",
+    "NHPC.NS",
+    "NMDC.NS",
+    "PERSISTENT.NS",
+    "PNB.NS",
+    "RECLTD.NS",
+    "SAIL.NS",
+    "SUZLON.NS",
+    "TATASTEEL.NS",
+    "UNIONBANK.NS"
+  ],
+  "stock_names": {
+    "ADANIPOWER.NS": "Adani Power",
+    "BEL.NS": "Bharat Electronics",
+    "CANBK.NS": "Canara Bank",
+    "COALINDIA.NS": "Coal India",
+    "DLF.NS": "DLF Limited",
+    "GMRAIRPORT.NS": "GMR Airports Infrastructure",
+    "HINDUNILVR.NS": "Hindustan Unilever",
+    "INDUSTOWER.NS": "Indus Towers",
+    "IOC.NS": "Indian Oil Corporation",
+    "IRFC.NS": "Indian Railway Finance Corp",
+    "NHPC.NS": "NHPC Limited",
+    "NMDC.NS": "NMDC Limited",
+    "PERSISTENT.NS": "Persistent Systems",
+    "PNB.NS": "Punjab National Bank",
+    "RECLTD.NS": "REC Limited",
+    "SAIL.NS": "Steel Authority of India",
+    "SUZLON.NS": "Suzlon Energy",
+    "TATASTEEL.NS": "Tata Steel",
+    "UNIONBANK.NS": "Union Bank of India"
+  },
+  "n_stocks": 19,
+  "n_features": 9,
+  "features": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "RSI_14",
+    "MACD_hist",
+    "BB_width",
+    "sentiment_10d_avg"
+  ],
+  "overall": {
+    "rmse": 33.65,
+    "mae": 16.1,
+    "r2": 0.9979,
+    "mape": 34.2
+  },
+  "per_stock": {
+    "ADANIPOWER.NS": {
+      "rmse": 16.44,
+      "mae": 14.85,
+      "mape": 125.97,
+      "r2": 0.8824,
+      "name": "Adani Power"
+    },
+    "BEL.NS": {
+      "rmse": 10.43,
+      "mae": 8.1,
+      "mape": 13.05,
+      "r2": 0.9923,
+      "name": "Bharat Electronics"
+    },
+    "CANBK.NS": {
+      "rmse": 9.4,
+      "mae": 7.37,
+      "mape": 16.48,
+      "r2": 0.9161,
+      "name": "Canara Bank"
+    },
+    "COALINDIA.NS": {
+      "rmse": 17.34,
+      "mae": 15.32,
+      "mape": 10.63,
+      "r2": 0.9765,
+      "name": "Coal India"
+    },
+    "DLF.NS": {
+      "rmse": 27.61,
+      "mae": 21.61,
+      "mape": 7.27,
+      "r2": 0.9874,
+      "name": "DLF Limited"
+    },
+    "GMRAIRPORT.NS": {
+      "rmse": 11.49,
+      "mae": 10.33,
+      "mape": 49.56,
+      "r2": 0.8429,
+      "name": "GMR Airports Infrastructure"
+    },
+    "HINDUNILVR.NS": {
+      "rmse": 45.9,
+      "mae": 34.4,
+      "mape": 1.97,
+      "r2": 0.9935,
+      "name": "Hindustan Unilever"
+    },
+    "INDUSTOWER.NS": {
+      "rmse": 17.46,
+      "mae": 14.94,
+      "mape": 6.75,
+      "r2": 0.945,
+      "name": "Indus Towers"
+    },
+    "IOC.NS": {
+      "rmse": 11.57,
+      "mae": 8.67,
+      "mape": 10.01,
+      "r2": 0.9078,
+      "name": "Indian Oil Corporation"
+    },
+    "IRFC.NS": {
+      "rmse": 18.5,
+      "mae": 16.15,
+      "mape": 30.9,
+      "r2": 0.8973,
+      "name": "Indian Railway Finance Corp"
+    },
+    "NHPC.NS": {
+      "rmse": 12.1,
+      "mae": 11.22,
+      "mape": 47.2,
+      "r2": 0.793,
+      "name": "NHPC Limited"
+    },
+    "NMDC.NS": {
+      "rmse": 11.35,
+      "mae": 10.34,
+      "mape": 48.61,
+      "r2": 0.7179,
+      "name": "NMDC Limited"
+    },
+    "PERSISTENT.NS": {
+      "rmse": 121.22,
+      "mae": 67.33,
+      "mape": 3.51,
+      "r2": 0.9962,
+      "name": "Persistent Systems"
+    },
+    "PNB.NS": {
+      "rmse": 13.02,
+      "mae": 10.2,
+      "mape": 12.83,
+      "r2": 0.8925,
+      "name": "Punjab National Bank"
+    },
+    "RECLTD.NS": {
+      "rmse": 13.34,
+      "mae": 8.51,
+      "mape": 7.54,
+      "r2": 0.9927,
+      "name": "REC Limited"
+    },
+    "SAIL.NS": {
+      "rmse": 12.45,
+      "mae": 10.03,
+      "mape": 13.09,
+      "r2": 0.8821,
+      "name": "Steel Authority of India"
+    },
+    "SUZLON.NS": {
+      "rmse": 14.46,
+      "mae": 13.23,
+      "mape": 204.38,
+      "r2": 0.5359,
+      "name": "Suzlon Energy"
+    },
+    "TATASTEEL.NS": {
+      "rmse": 16.31,
+      "mae": 12.95,
+      "mape": 14.78,
+      "r2": 0.8882,
+      "name": "Tata Steel"
+    },
+    "UNIONBANK.NS": {
+      "rmse": 13.3,
+      "mae": 11.04,
+      "mape": 15.03,
+      "r2": 0.9059,
+      "name": "Union Bank of India"
+    }
+  },
+  "epochs_trained": 24,
+  "best_val_loss": 2.6e-05,
+  "architecture": {
+    "lstm_1": 128,
+    "lstm_2": 64,
+    "dense": 32,
+    "dropout": 0.3,
+    "sequence_length": 60,
+    "features": 9,
+    "batch_size": 32,
+    "learning_rate": 0.0003
+  }
+}

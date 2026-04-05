@@ -1,0 +1,166 @@
+{
+  "timestamp": "20260225_163003",
+  "data_range": "2020-01-01 to 2026-01-01",
+  "stocks": [
+    "AAPL",
+    "AMZN",
+    "AVGO",
+    "BRK-B",
+    "COST",
+    "GOOG",
+    "JNJ",
+    "JPM",
+    "LLY",
+    "MA",
+    "META",
+    "MSFT",
+    "NFLX",
+    "NVDA",
+    "ORCL",
+    "PG",
+    "TSLA",
+    "V",
+    "WMT",
+    "XOM"
+  ],
+  "n_stocks": 20,
+  "overall": {
+    "rmse": 7.37,
+    "mae": 4.33,
+    "r2": 0.9984,
+    "mape": 2.7
+  },
+  "per_stock": {
+    "AAPL": {
+      "rmse": 4.4,
+      "mae": 3.2,
+      "mape": 1.94,
+      "r2": 0.9911
+    },
+    "AMZN": {
+      "rmse": 4.62,
+      "mae": 3.49,
+      "mape": 2.28,
+      "r2": 0.9857
+    },
+    "AVGO": {
+      "rmse": 6.55,
+      "mae": 3.67,
+      "mape": 4.02,
+      "r2": 0.9948
+    },
+    "BRK-B": {
+      "rmse": 5.59,
+      "mae": 4.11,
+      "mape": 1.22,
+      "r2": 0.9967
+    },
+    "COST": {
+      "rmse": 11.87,
+      "mae": 8.24,
+      "mape": 1.41,
+      "r2": 0.9974
+    },
+    "GOOG": {
+      "rmse": 3.85,
+      "mae": 2.79,
+      "mape": 2.06,
+      "r2": 0.9939
+    },
+    "JNJ": {
+      "rmse": 2.31,
+      "mae": 1.79,
+      "mape": 1.2,
+      "r2": 0.9773
+    },
+    "JPM": {
+      "rmse": 3.71,
+      "mae": 2.69,
+      "mape": 1.78,
+      "r2": 0.9966
+    },
+    "LLY": {
+      "rmse": 16.76,
+      "mae": 10.09,
+      "mape": 2.09,
+      "r2": 0.9963
+    },
+    "MA": {
+      "rmse": 8.54,
+      "mae": 6.27,
+      "mape": 1.64,
+      "r2": 0.991
+    },
+    "META": {
+      "rmse": 12.87,
+      "mae": 8.61,
+      "mape": 2.61,
+      "r2": 0.9949
+    },
+    "MSFT": {
+      "rmse": 6.87,
+      "mae": 5.17,
+      "mape": 1.68,
+      "r2": 0.995
+    },
+    "NFLX": {
+      "rmse": 2.72,
+      "mae": 2.12,
+      "mape": 4.71,
+      "r2": 0.9906
+    },
+    "NVDA": {
+      "rmse": 3.88,
+      "mae": 2.96,
+      "mape": 10.57,
+      "r2": 0.9953
+    },
+    "ORCL": {
+      "rmse": 5.42,
+      "mae": 2.96,
+      "mape": 2.58,
+      "r2": 0.9908
+    },
+    "PG": {
+      "rmse": 2.14,
+      "mae": 1.62,
+      "mape": 1.19,
+      "r2": 0.9851
+    },
+    "TSLA": {
+      "rmse": 13.93,
+      "mae": 10.03,
+      "mape": 4.21,
+      "r2": 0.9763
+    },
+    "V": {
+      "rmse": 4.81,
+      "mae": 3.56,
+      "mape": 1.5,
+      "r2": 0.9921
+    },
+    "WMT": {
+      "rmse": 2.02,
+      "mae": 1.61,
+      "mape": 3.1,
+      "r2": 0.9912
+    },
+    "XOM": {
+      "rmse": 2.49,
+      "mae": 1.99,
+      "mape": 3.0,
+      "r2": 0.9927
+    }
+  },
+  "epochs_trained": 49,
+  "best_val_loss": 4.5e-05,
+  "architecture": {
+    "lstm_1": 64,
+    "lstm_2": 32,
+    "dropout": 0.3,
+    "sequence_length": 60,
+    "features": 6,
+    "batch_size": 32,
+    "learning_rate": 0.0005
+  }
+}

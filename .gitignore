@@ -1,0 +1,17 @@
+﻿__pycache__/
+.venv/
+*.pyc
+.env
+*.h5
+08032026.txt
+CLAUDE.md
+strategy.txt
+technical-terms.txt
+technical-terms.docx
+Viva_prep.docx
+fix_chat_history.py
+retrain_model.py
+backtest.py
+keras_model.h5
+stage2_scalers_20250705_170829.pkl
+stage2_universal_lstm_20250705_170829.keras

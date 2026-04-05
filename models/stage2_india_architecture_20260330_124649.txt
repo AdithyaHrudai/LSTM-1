@@ -1,0 +1,72 @@
+StockSense AI — Indian NSE LSTM Model Architecture
+=============================================
+
+Model Type: Sequential LSTM (upgraded)
+Market: India (NSE) — Currency: INR
+Training Date: 20260330_124649
+Data Range: 2016-02-27 to 2026-03-27
+Training Stocks: 20 Indian companies
+Features: 9 features
+Target: Close (INR)
+
+Architecture:
+1. LSTM Layer 1: 128 units, return_sequences=True
+2. Dropout: 0.3
+3. LSTM Layer 2: 64 units, return_sequences=False
+4. Dropout: 0.3
+5. Dense: 32 units, ReLU activation
+6. Dense Output: 1 unit
+
+Training Parameters:
+- Batch Size: 32
+- Learning Rate: 0.0003
+- Epochs Trained: 24
+- Early Stopping Patience: 20
+- LR Reduction Patience: 8
+
+Validation Performance:
+- RMSE: Rs.5.52
+- MAE: Rs.3.45
+- R2: 0.9894
+- MAPE: 4.10%
+
+Features Used (9):
+- Open
+- High
+- Low
+- Close
+- Volume
+- RSI_14
+- MACD_hist
+- BB_width
+- sentiment_10d_avg
+
+Stocks Trained On:
+- Adani Power (ADANIPOWER.NS)
+- Bharat Electronics (BEL.NS)
+- Canara Bank (CANBK.NS)
+- Coal India (COALINDIA.NS)
+- DLF Limited (DLF.NS)
+- GMR Airports Infrastructure (GMRAIRPORT.NS)
+- Hindustan Unilever (HINDUNILVR.NS)
+- Indus Towers (INDUSTOWER.NS)
+- Indian Oil Corporation (IOC.NS)
+- Indian Railway Finance Corp (IRFC.NS)
+- NHPC Limited (NHPC.NS)
+- NMDC Limited (NMDC.NS)
+- Persistent Systems (PERSISTENT.NS)
+- Punjab National Bank (PNB.NS)
+- REC Limited (RECLTD.NS)
+- Steel Authority of India (SAIL.NS)
+- Sun Pharmaceutical Industries (SUNPHARMA.NS)
+- Suzlon Energy (SUZLON.NS)
+- Tata Steel (TATASTEEL.NS)
+- Union Bank of India (UNIONBANK.NS)
+
+Usage:
+1. model = keras.models.load_model('models/stage2_india_lstm_20260330_124649.keras', compile=False)
+2. scalers = joblib.load('models/stage2_india_scalers_20260330_124649.pkl')  # dict of per-stock scalers
+3. feat_sc = scalers['TICKER.NS']['feature_scaler']
+4. tgt_sc = scalers['TICKER.NS']['target_scaler']
+5. Scale input (shape: batch, 60, 9) with feat_sc
+6. Inverse-transform predictions with tgt_sc (output in INR)

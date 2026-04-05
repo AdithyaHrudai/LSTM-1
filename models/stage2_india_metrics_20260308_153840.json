@@ -1,0 +1,223 @@
+{
+  "timestamp": "20260308_153840",
+  "market": "India",
+  "currency": "INR",
+  "data_range": "2016-03-01 to 2026-03-01",
+  "stocks": [
+    "ABB.NS",
+    "BAJAJ-AUTO.NS",
+    "CYIENT.NS",
+    "DIVISLAB.NS",
+    "EICHERMOT.NS",
+    "FORCEMOT.NS",
+    "GODFRYPHLP.NS",
+    "HEROMOTOCO.NS",
+    "HINDUNILVR.NS",
+    "INDUSTOWER.NS",
+    "LTIM.NS",
+    "LTTS.NS",
+    "NMDC.NS",
+    "PERSISTENT.NS",
+    "PIDILITIND.NS",
+    "POLYCAB.NS",
+    "SCHAEFFLER.NS",
+    "TORNTPHARM.NS",
+    "TRENT.NS",
+    "UBL.NS"
+  ],
+  "stock_names": {
+    "ABB.NS": "ABB India",
+    "BAJAJ-AUTO.NS": "Bajaj Auto",
+    "CYIENT.NS": "Cyient Limited",
+    "DIVISLAB.NS": "Divi's Laboratories",
+    "EICHERMOT.NS": "Eicher Motors",
+    "FORCEMOT.NS": "Force Motors",
+    "GODFRYPHLP.NS": "Godfrey Phillips India",
+    "HEROMOTOCO.NS": "Hero MotoCorp",
+    "HINDUNILVR.NS": "Hindustan Unilever",
+    "INDUSTOWER.NS": "Indus Towers",
+    "LTIM.NS": "LTIMindtree",
+    "LTTS.NS": "L&T Technology Services",
+    "NMDC.NS": "NMDC Limited",
+    "PERSISTENT.NS": "Persistent Systems",
+    "PIDILITIND.NS": "Pidilite Industries",
+    "POLYCAB.NS": "Polycab India",
+    "SCHAEFFLER.NS": "Schaeffler India",
+    "TORNTPHARM.NS": "Torrent Pharmaceuticals",
+    "TRENT.NS": "Trent Limited",
+    "UBL.NS": "United Breweries"
+  },
+  "n_stocks": 20,
+  "n_features": 9,
+  "features": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "RSI_14",
+    "MACD_hist",
+    "BB_width",
+    "sentiment_10d_avg"
+  ],
+  "overall": {
+    "rmse": 140.7,
+    "mae": 93.02,
+    "r2": 0.9957,
+    "mape": 23.49
+  },
+  "per_stock": {
+    "ABB.NS": {
+      "rmse": 153.09,
+      "mae": 101.48,
+      "mape": 3.56,
+      "r2": 0.9948,
+      "name": "ABB India"
+    },
+    "BAJAJ-AUTO.NS": {
+      "rmse": 171.83,
+      "mae": 142.75,
+      "mape": 4.0,
+      "r2": 0.9957,
+      "name": "Bajaj Auto"
+    },
+    "CYIENT.NS": {
+      "rmse": 64.34,
+      "mae": 53.48,
+      "mape": 8.84,
+      "r2": 0.9842,
+      "name": "Cyient Limited"
+    },
+    "DIVISLAB.NS": {
+      "rmse": 156.07,
+      "mae": 123.31,
+      "mape": 4.54,
+      "r2": 0.9925,
+      "name": "Divi's Laboratories"
+    },
+    "EICHERMOT.NS": {
+      "rmse": 148.67,
+      "mae": 126.84,
+      "mape": 4.26,
+      "r2": 0.9886,
+      "name": "Eicher Motors"
+    },
+    "FORCEMOT.NS": {
+      "rmse": 405.96,
+      "mae": 209.84,
+      "mape": 3.93,
+      "r2": 0.9951,
+      "name": "Force Motors"
+    },
+    "GODFRYPHLP.NS": {
+      "rmse": 78.07,
+      "mae": 49.03,
+      "mape": 7.88,
+      "r2": 0.991,
+      "name": "Godfrey Phillips India"
+    },
+    "HEROMOTOCO.NS": {
+      "rmse": 143.95,
+      "mae": 125.6,
+      "mape": 4.43,
+      "r2": 0.9811,
+      "name": "Hero MotoCorp"
+    },
+    "HINDUNILVR.NS": {
+      "rmse": 83.38,
+      "mae": 71.25,
+      "mape": 3.81,
+      "r2": 0.9786,
+      "name": "Hindustan Unilever"
+    },
+    "INDUSTOWER.NS": {
+      "rmse": 59.17,
+      "mae": 46.45,
+      "mape": 19.07,
+      "r2": 0.3686,
+      "name": "Indus Towers"
+    },
+    "LTIM.NS": {
+      "rmse": 182.76,
+      "mae": 138.19,
+      "mape": 4.41,
+      "r2": 0.991,
+      "name": "LTIMindtree"
+    },
+    "LTTS.NS": {
+      "rmse": 167.68,
+      "mae": 128.0,
+      "mape": 4.63,
+      "r2": 0.9887,
+      "name": "L&T Technology Services"
+    },
+    "NMDC.NS": {
+      "rmse": 85.22,
+      "mae": 72.03,
+      "mape": 325.61,
+      "r2": -14.8949,
+      "name": "NMDC Limited"
+    },
+    "PERSISTENT.NS": {
+      "rmse": 125.67,
+      "mae": 78.99,
+      "mape": 5.35,
+      "r2": 0.9959,
+      "name": "Persistent Systems"
+    },
+    "PIDILITIND.NS": {
+      "rmse": 54.98,
+      "mae": 44.69,
+      "mape": 6.34,
+      "r2": 0.9829,
+      "name": "Pidilite Industries"
+    },
+    "POLYCAB.NS": {
+      "rmse": 176.1,
+      "mae": 125.1,
+      "mape": 4.05,
+      "r2": 0.9943,
+      "name": "Polycab India"
+    },
+    "SCHAEFFLER.NS": {
+      "rmse": 123.73,
+      "mae": 89.23,
+      "mape": 4.64,
+      "r2": 0.9898,
+      "name": "Schaeffler India"
+    },
+    "TORNTPHARM.NS": {
+      "rmse": 93.16,
+      "mae": 72.57,
+      "mape": 5.5,
+      "r2": 0.9912,
+      "name": "Torrent Pharmaceuticals"
+    },
+    "TRENT.NS": {
+      "rmse": 130.22,
+      "mae": 80.02,
+      "mape": 8.06,
+      "r2": 0.9958,
+      "name": "Trent Limited"
+    },
+    "UBL.NS": {
+      "rmse": 59.6,
+      "mae": 48.77,
+      "mape": 3.58,
+      "r2": 0.9757,
+      "name": "United Breweries"
+    }
+  },
+  "epochs_trained": 26,
+  "best_val_loss": 3e-05,
+  "architecture": {
+    "lstm_1": 128,
+    "lstm_2": 64,
+    "dense": 32,
+    "dropout": 0.3,
+    "sequence_length": 60,
+    "features": 9,
+    "batch_size": 32,
+    "learning_rate": 0.0003
+  }
+}
